@@ -1,11 +1,3 @@
-<!--
- * @Descripttion: 
- * @version: 
- * @Author: wsz
- * @Date: 2021-04-01 12:07:21
- * @LastEditors: wsz
- * @LastEditTime: 2021-04-01 14:20:15
--->
 <template>
   <!--所有的item都展示同一个图片, 同一个文字-->
   <div class="tab-bar-item" @click="itemClick">
@@ -18,10 +10,9 @@
 <script>
   export default {
     name: "TabBarItem",
-    //父传子 把要跳转的路径传入
     props: {
-      path: String,   //动态传入图片加载路径
-      activeColor: {  //动态传入激活状态时的颜色，默认为红色
+      path: String,
+      activeColor: {
         type: String,
         default: 'red'
       }
